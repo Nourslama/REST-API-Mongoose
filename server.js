@@ -4,7 +4,7 @@ const router=require('./routes/contact')
 const app=express()
 app.use(express.json())
 
-const db="mongodb+srv://nour:nour198800@cluster0-8bamv.mongodb.net/users?retryWrites=true&w=majority"
+const db="mongodb+srv://name:<password>cluster0-8bamv.mongodb.net/users?retryWrites=true&w=majority"
 
  mongoose.connect(db,{ useUnifiedTopology: true ,useNewUrlParser: true }).then(()=>
      console.log("Mongodb connected")).catch(err=>console.log(err))
